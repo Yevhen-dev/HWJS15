@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.secondTask {
+    padding: 20px;
+    border: 2px solid royalblue;
+    margin-bottom: 20px;
+}
+
+.secondTask__list__item {
+    padding: 10px 5px;
+    border: 2px solid blue;
+    margin-bottom: 10px;
+}
+
+.thirdTask {
+    border: 2px solid darkkhaki;
+    padding: 20px;
+    margin-bottom: 10px;  
+}
+
+.thirdTask__btn {
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.thirdTask__list {
+    display: none;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid yellowgreen;
+}
+
+.thirdTask__list.active {
+    display: block;
+}
+
+.thirdTask__list__item {
+    padding-bottom: 5px;
+}
+
+.fourthTask {
+    padding: 20px;
+    border: 2px solid palevioletred;
+}
+
+.fourthTask__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourthTask__list__planet {
+    position: relative;
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fourthTask__list__planet>img {
+    width: 100%;
+}
+
+.fourthTask__list__planet__cover {
+    display: none;
+}
+
+.fourthTask__list__planet:hover .fourthTask__list__planet__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
